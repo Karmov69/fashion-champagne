@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Basket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="./styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper wrapper--basket">
+    <div class="basket">
+      <header class="header basket__header">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 d-flex align-items-center">
+              <a href="/" class="header__logo header__logo--dark logo"></a>
+              <div class="header__hamburger js-hamburger">
+                <img src="./img/svg/hamburger.svg" alt="">
+              </div>
+            </div>
+    
+            <div class="col-6 d-flex justify-content-center align-items-center d-md-none">
+              <a href="/" class="header__logo-mobile">
+                <img src="./img/svg/logo-mobile.svg" alt="">
+              </a>
+            </div>
+    
+            <div class="col-3 d-flex justify-content-end align-items-center d-md-none">
+              <a href="/basket.html">
+                <svg width="20" height="26" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.5 10C0.5 9.17157 1.17157 8.5 2 8.5H18C18.8284 8.5 19.5 9.17157 19.5 10V25C19.5 25.8284 18.8284 26.5 18 26.5H2C1.17157 26.5 0.5 25.8284 0.5 25V10Z"
+                    stroke="#735745" />
+                  <path
+                    d="M15 6C15 4.67392 14.4732 3.40215 13.5355 2.46447C12.5979 1.52678 11.3261 1 10 1C8.67392 1 7.40215 1.52678 6.46447 2.46447C5.52678 3.40215 5 4.67392 5 6"
+                    stroke="#735745" stroke-linecap="round" />
+                  <path
+                    d="M9.8193 13.936C9.0273 13.936 8.2353 14.212 7.4433 14.764L7.1553 13.996C7.9713 13.412 8.8993 13.12 9.9393 13.12C10.7953 13.12 11.4593 13.34 11.9313 13.78C12.4033 14.212 12.6393 14.82 12.6393 15.604C12.6393 16.388 12.3553 17.18 11.7873 17.98C11.2193 18.78 10.1553 19.844 8.5953 21.172V21.196H12.6753V22H7.2753V21.196C8.9793 19.788 10.1313 18.692 10.7313 17.908C11.3393 17.116 11.6433 16.372 11.6433 15.676C11.6433 15.108 11.4873 14.676 11.1753 14.38C10.8713 14.084 10.4193 13.936 9.8193 13.936Z"
+                    fill="#735745" />
+                </svg>
+              </a>
+            </div>
+    
+            <div class="col-12 col-md-9 header__menu js-mobile-menu">
+              <nav class="top-menu">
+                <a href="/" class="top-menu__item top-menu__item--dark">Главная</a>
+                <a href="/store.html" class="top-menu__item  top-menu__item--dark">Магазин</a>
+                <a href="" class="top-menu__item d-none d-md-block">
+                  <svg width="30" height="40" viewBox="0 0 30 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="13.75" width="28.5" height="26.5" rx="1.25" stroke="#735745" stroke-width="1.5" />
+                    <path
+                      d="M23 9C23 6.87827 22.1571 4.84344 20.6569 3.34315C19.1566 1.84285 17.1217 1 15 1C12.8783 1 10.8434 1.84285 9.34315 3.34315C7.84286 4.84344 7 6.87827 7 9"
+                      stroke="#735745" stroke-width="1.5" stroke-linecap="round" />
+                    <path
+                      d="M14.7289 20.904C13.5409 20.904 12.3529 21.318 11.1649 22.146L10.7329 20.994C11.9569 20.118 13.3489 19.68 14.9089 19.68C16.1929 19.68 17.1889 20.01 17.8969 20.67C18.6049 21.318 18.9589 22.23 18.9589 23.406C18.9589 24.582 18.5329 25.77 17.6809 26.97C16.8289 28.17 15.2329 29.766 12.8929 31.758V31.794H19.0129V33H10.9129V31.794C13.4689 29.682 15.1969 28.038 16.0969 26.862C17.0089 25.674 17.4649 24.558 17.4649 23.514C17.4649 22.662 17.2309 22.014 16.7629 21.57C16.3069 21.126 15.6289 20.904 14.7289 20.904Z"
+                      fill="#735745" />
+                  </svg>
+                </a>
+              </nav>
+    
+              <div class="header__socials">
+                <p>Мы в социальных сетях</p>
+    
+                <ul class="socials header__socials-list">
+                  <li class="socials__item">
+                    <a href="">
+                      <img src="./img/svg/inst-dark.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="">
+                      <img src="./img/svg/youtube-dark.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="basket__content">
+        <div class="container">
+          <h1 class="h2">Корзина</h1>
+        
+          <div class="row basket__table-head m-0 d-none d-md-flex">
+            <div class="col-2 offset-6 basket__table-head-item">Цена</div>
+            <div class="col-2 basket__table-head-item">Количество</div>
+            <div class="col-2 basket__table-head-item">Итого</div>
+          </div>
+          <div class="row m-0">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="basket__table-item basket__table-item--border-top col-12">
+                      <div class="row m-0">
+                        <div class="col-3 col-md-2 pl-0 d-md-none">
+                          <div class="basket__table-img">
+                            <a href="">
+                              <img src="./img/basket1.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+        
+                        <div class="col-9 col-md-12 p-0">
+                          <div class="row m-0">
+                            <div class="col-2 pl-0 d-none d-md-block">
+                              <div class="basket__table-img">
+                                <a href="">
+                                  <img src="./img/basket1.png" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                              <div class="basket__table-text">
+                                <div>
+                                  <h3 class="basket__table-name">AUTHENTIC BEAUTY CONCEPT</h3>
+                                  <p class="basket__table-description">
+                                    Шампунь восстанавливающий для поврежденных волос Replenish
+                                  </p>
+                                </div>
+                                <div class="basket__table-code">
+                                  <span>Франция, 300 мл</span>
+                                  <span>Артикул: KL_SS005</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-2 offset-md-1 p-0 p-md-2">
+                              <div class="basket__table-price">2 500 ₽</div>
+                            </div>
+                            <div class="col-8 col-md-2 p-0 p-md-2">
+                              <div class="basket__table-counter">
+                                <div class="count">
+                                  <div class="count__content">
+                                    <div class="count__minus"></div>
+                                    <span class="count__value">1</span>
+                                    <div class="count__plus"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 p-md-2">
+                              <div class="basket__table-price">
+                                2 500 ₽
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="basket__table-item col-12">
+                      <div class="row m-0">
+                        <div class="col-3 col-md-2 pl-0 d-md-none">
+                          <div class="basket__table-img">
+                            <a href="">
+                              <img src="./img/basket1.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+        
+                        <div class="col-9 col-md-12 p-0">
+                          <div class="row m-0">
+                            <div class="col-2 pl-0 d-none d-md-block">
+                              <div class="basket__table-img">
+                                <a href="">
+                                  <img src="./img/basket1.png" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                              <div class="basket__table-text">
+                                <div>
+                                  <h3 class="basket__table-name">AUTHENTIC BEAUTY CONCEPT</h3>
+                                  <p class="basket__table-description">
+                                    Шампунь восстанавливающий для поврежденных волос Replenish
+                                  </p>
+                                </div>
+                                <div class="basket__table-code">
+                                  <span>Франция, 300 мл</span>
+                                  <span>Артикул: KL_SS005</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-2 offset-md-1 p-0 p-md-2">
+                              <div class="basket__table-price">2 500 ₽</div>
+                            </div>
+                            <div class="col-8 col-md-2 p-0 p-md-2">
+                              <div class="basket__table-counter">
+                                <div class="count">
+                                  <div class="count__content">
+                                    <div class="count__minus"></div>
+                                    <span class="count__value">1</span>
+                                    <div class="count__plus"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 p-md-2">
+                              <div class="basket__table-price">
+                                2 500 ₽
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row m-0">
+            <div class="col-12 p-0 col-md-4 offset-md-8">
+              <div class="basket__total-price">
+                <p>Итого к оплате:</p>
+                <span>9 400 ₽</span>
+              </div>
+              <a href="" class="btn btn--block">
+                Оформить заказ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer class="footer footer--small">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="footer__address">
+              <p>Наш адрес</p>
+              <h3>Санкт-Петербург, Джамбула пер. 11</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 offset-md-2">
+            <div class="footer__contacts">
+              <p>Наш адрес</p>
+             <a href="tel:+79214029209">+7 921 40 29 209</a>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-2 pl-md-0">
+            <div class="footer__socials">
+              <p>Мы в социальных сетях</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="">
+                    <img src="./img/svg/inst.svg" alt="">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="">
+                    <img src="./img/svg/youtube.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__copyright">
+              <p>© 2020 Fashion Champagne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Product-detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="./styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 d-flex align-items-center">
+            <a href="/" class="header__logo header__logo--dark logo"></a>
+            <div class="header__hamburger js-hamburger">
+              <img src="./img/svg/hamburger.svg" alt="">
+            </div>
+          </div>
+    
+          <div class="col-6 d-flex justify-content-center align-items-center d-md-none">
+            <a href="/" class="header__logo-mobile">
+              <img src="./img/svg/logo-mobile.svg" alt="">
+            </a>
+          </div>
+    
+          <div class="col-3 d-flex justify-content-end align-items-center d-md-none">
+            <svg width="20" height="26" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.5 10C0.5 9.17157 1.17157 8.5 2 8.5H18C18.8284 8.5 19.5 9.17157 19.5 10V25C19.5 25.8284 18.8284 26.5 18 26.5H2C1.17157 26.5 0.5 25.8284 0.5 25V10Z"
+                stroke="#735745" />
+              <path
+                d="M15 6C15 4.67392 14.4732 3.40215 13.5355 2.46447C12.5979 1.52678 11.3261 1 10 1C8.67392 1 7.40215 1.52678 6.46447 2.46447C5.52678 3.40215 5 4.67392 5 6"
+                stroke="#735745" stroke-linecap="round" />
+              <path
+                d="M9.8193 13.936C9.0273 13.936 8.2353 14.212 7.4433 14.764L7.1553 13.996C7.9713 13.412 8.8993 13.12 9.9393 13.12C10.7953 13.12 11.4593 13.34 11.9313 13.78C12.4033 14.212 12.6393 14.82 12.6393 15.604C12.6393 16.388 12.3553 17.18 11.7873 17.98C11.2193 18.78 10.1553 19.844 8.5953 21.172V21.196H12.6753V22H7.2753V21.196C8.9793 19.788 10.1313 18.692 10.7313 17.908C11.3393 17.116 11.6433 16.372 11.6433 15.676C11.6433 15.108 11.4873 14.676 11.1753 14.38C10.8713 14.084 10.4193 13.936 9.8193 13.936Z"
+                fill="#735745" />
+            </svg>
+          </div>
+    
+          <div class="col-12 col-md-9 header__menu js-mobile-menu">
+            <nav class="top-menu">
+              <a href="/" class="top-menu__item">Главная</a>
+              <a href="/store.html" class="top-menu__item">Магазин</a>
+              <a href="" class="top-menu__item d-none d-md-block">
+                <svg width="30" height="40" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.5 10C0.5 9.17157 1.17157 8.5 2 8.5H18C18.8284 8.5 19.5 9.17157 19.5 10V25C19.5 25.8284 18.8284 26.5 18 26.5H2C1.17157 26.5 0.5 25.8284 0.5 25V10Z"
+                    stroke="#735745" />
+                  <path
+                    d="M15 6C15 4.67392 14.4732 3.40215 13.5355 2.46447C12.5979 1.52678 11.3261 1 10 1C8.67392 1 7.40215 1.52678 6.46447 2.46447C5.52678 3.40215 5 4.67392 5 6"
+                    stroke="#735745" stroke-linecap="round" />
+                  <path
+                    d="M9.8193 13.936C9.0273 13.936 8.2353 14.212 7.4433 14.764L7.1553 13.996C7.9713 13.412 8.8993 13.12 9.9393 13.12C10.7953 13.12 11.4593 13.34 11.9313 13.78C12.4033 14.212 12.6393 14.82 12.6393 15.604C12.6393 16.388 12.3553 17.18 11.7873 17.98C11.2193 18.78 10.1553 19.844 8.5953 21.172V21.196H12.6753V22H7.2753V21.196C8.9793 19.788 10.1313 18.692 10.7313 17.908C11.3393 17.116 11.6433 16.372 11.6433 15.676C11.6433 15.108 11.4873 14.676 11.1753 14.38C10.8713 14.084 10.4193 13.936 9.8193 13.936Z"
+                    fill="#735745" />
+                </svg>
+              </a>
+            </nav>
+    
+            <div class="header__socials">
+              <p>Мы в социальных сетях</p>
+    
+              <ul class="socials header__socials-list">
+                <li class="socials__item">
+                  <a href="">
+                    <img src="./img/svg/inst-dark.svg" alt="">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="">
+                    <img src="./img/svg/youtube-dark.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <div class="hero hero--second hero--product-detail">
+      <div class="slider-main js-slider-main">
+        <div class="slider-main__item">
+          <div class="slider-main__img" style="background-image: url('./img/slider-main-product1.png'); background-size:contain;"></div>
+          <div class="slider-main__text">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <p class="mb-0">AUTHENTIC BEAUTY CONCEPT</p>
+                  <h2>Шампунь восстанавливающий для поврежденных волос Replenish</h2>
+                  <div class="slider-main__line"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11 offset-lg-1">
+                  <p>Цена за шт. 2 500</p>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                  <div class="count">
+                    <div class="count__title">Количество</div>
+                    <div class="count__content">
+                      <div class="count__minus"></div>
+                      <span class="count__value">1</span>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5">
+                  <div class="slider-main__price">
+                    <p>Итоговая сумма</p>
+                    <span>2 500 ₽</span>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <button class="slider-main__btn btn btn--block">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slider-main__item">
+          <div class="slider-main__img"
+            style="background-image: url('./img/slider-main-product1.png'); background-size:contain;"></div>
+          <div class="slider-main__text">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <p class="mb-0">AUTHENTIC BEAUTY CONCEPT</p>
+                  <h2>Шампунь восстанавливающий для поврежденных волос Replenish</h2>
+                  <div class="slider-main__line"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11 offset-lg-1">
+                  <p>Цена за шт. 2 500</p>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                  <div class="count">
+                    <div class="count__title">Количество</div>
+                    <div class="count__content">
+                      <div class="count__minus"></div>
+                      <span class="count__value">1</span>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5">
+                  <div class="slider-main__price">
+                    <p>Итоговая сумма</p>
+                    <span>2 500 ₽</span>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <button class="slider-main__btn btn btn--block">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slider-main__item">
+          <div class="slider-main__img"
+            style="background-image: url('./img/slider-main-product1.png'); background-size:contain;"></div>
+          <div class="slider-main__text">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <p class="mb-0">AUTHENTIC BEAUTY CONCEPT</p>
+                  <h2>Шампунь восстанавливающий для поврежденных волос Replenish</h2>
+                  <div class="slider-main__line"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11 offset-lg-1">
+                  <p>Цена за шт. 2 500</p>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                  <div class="count">
+                    <div class="count__title">Количество</div>
+                    <div class="count__content">
+                      <div class="count__minus"></div>
+                      <span class="count__value">1</span>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5">
+                  <div class="slider-main__price">
+                    <p>Итоговая сумма</p>
+                    <span>2 500 ₽</span>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <button class="slider-main__btn btn btn--block">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <section class="product-description">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>ОПИСАНИЕ</h2>
+        <ul class="nav nav-tabs price__tabs d-none d-md-flex" id="priceTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#price-tab-1" role="tab">О продукте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#price-tab-2" role="tab">Способ применения</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#price-tab-3" role="tab">Состав</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="priceTabContent">
+          <div class="tab-pane fade show active" id="price-tab-1" role="price-tab-1">
+            <div class="price__item-btn d-lg-none js-price-tab" data-href="#mobile-tab-1">О продукте</div>
+            <div class="price__item-content pt-lg-3" id="mobile-tab-1">
+              <p>Очищающий шампунь для поврежденных волос без сульфатов, парабенов и силиконов мягко и эффективно
+                удаляет загрязнения и
+                остатки стайлинга.</p>
+              <p>Экстракты ореха пекан и кленового листа восстанавливают блеск, питают и увлажняют поврежденные волосы.
+                Формула с
+                гидролизированным протеином сои смягчает фибру волоса. Шампунь оставляет после себя сладкий и солнечный
+                аромат цветов
+                франжипани, молочного жасмина, кленового сиропа и сандалового дерева.</p>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="price-tab-2" role="price-tab-2">
+            <div class="price__item-btn d-lg-none js-price-tab" data-href="#mobile-tab-2">Способ применения</div>
+            <div class="price__item-content pt-lg-3" id="mobile-tab-2">
+              <p>Экстракты ореха пекан и кленового листа восстанавливают блеск, питают и увлажняют поврежденные волосы.
+                Формула с
+                гидролизированным протеином сои смягчает фибру волоса. Шампунь оставляет после себя сладкий и солнечный
+                аромат цветов
+                франжипани, молочного жасмина, кленового сиропа и сандалового дерева.</p>
+              <p>Очищающий шампунь для поврежденных волос без сульфатов, парабенов и силиконов мягко и эффективно
+                удаляет загрязнения
+                и
+                остатки стайлинга.</p>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="price-tab-3" role="price-tab-3">
+            <div class="price__item-btn d-lg-none js-price-tab" data-href="#mobile-tab-3">Состав</div>
+            <div class="price__item-content pt-lg-3" id="mobile-tab-3">
+              <p>Очищающий шампунь для поврежденных волос без сульфатов, парабенов и силиконов мягко и эффективно
+                удаляет загрязнения
+                и
+                остатки стайлинга.</p>
+              <p>Экстракты ореха пекан и кленового листа восстанавливают блеск, питают и увлажняют поврежденные волосы.
+                Формула с
+                гидролизированным протеином сои смягчает фибру волоса. Шампунь оставляет после себя сладкий и солнечный
+                аромат цветов
+                франжипани, молочного жасмина, кленового сиропа и сандалового дерева.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    <section class="similar-products">
+  <h2>Похожие товары</h2>
+
+  <div class="container">
+    <div class="products-slider js-products-slider">
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products1.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products2.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products3.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products4.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products1.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+      <div class="product">
+        <a href="" class="product__img">
+          <img src="./img/similar-products4.png" alt="">
+        </a>
+        <a href="" class="product__name">AUTHENTIC BEAUTY CONCEPT</a>
+        <div class="product__description">Бальзам для умывания Про-Коллаген Роза Pro-Collagen Cleansing Balm Rose</div>
+        <div class="product__buy">
+          <div class="product__price">2 500 Р</div>
+          <button class="btn btn--transparent product__btn">Купить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+    <section class="instagramm">
+  <div class="container">
+    <h2>Мы в Instagram @fashionchampagne_</h2>
+    <ul class="instagramm__list">
+      <li class="instagramm__item" style="background-image: url('./img/inst1.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst2.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst3.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst4.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst5.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst6.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst7.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst8.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst9.png');"></li>
+    </ul>
+  </div>
+</section>
+  </div>
+
+  <div class="full-image js-full-image">
+    <div class="full-image__close js-full-image-close">
+      Закрыть
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./js/main.min.js"></script>
+
+</body>
+
+</html>

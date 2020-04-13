@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Fashion Champagne UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="./styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-3 d-flex align-items-center">
+        <a href="/" class="header__logo logo"></a>
+        <div class="header__hamburger js-hamburger">
+          <img src="./img/svg/hamburger.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="col-6 d-flex justify-content-center align-items-center d-md-none">
+        <a href="/" class="header__logo-mobile">
+          <img src="./img/svg/logo-mobile.svg" alt="">
+        </a>
+      </div>
+
+      <div class="col-3 d-flex justify-content-end align-items-center d-md-none">
+        <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.5 10C0.5 9.17157 1.17157 8.5 2 8.5H18C18.8284 8.5 19.5 9.17157 19.5 10V25C19.5 25.8284 18.8284 26.5 18 26.5H2C1.17157 26.5 0.5 25.8284 0.5 25V10Z"
+            stroke="#735745" />
+          <path
+            d="M15 6C15 4.67392 14.4732 3.40215 13.5355 2.46447C12.5979 1.52678 11.3261 1 10 1C8.67392 1 7.40215 1.52678 6.46447 2.46447C5.52678 3.40215 5 4.67392 5 6"
+            stroke="#735745" stroke-linecap="round" />
+          <path
+            d="M9.8193 13.936C9.0273 13.936 8.2353 14.212 7.4433 14.764L7.1553 13.996C7.9713 13.412 8.8993 13.12 9.9393 13.12C10.7953 13.12 11.4593 13.34 11.9313 13.78C12.4033 14.212 12.6393 14.82 12.6393 15.604C12.6393 16.388 12.3553 17.18 11.7873 17.98C11.2193 18.78 10.1553 19.844 8.5953 21.172V21.196H12.6753V22H7.2753V21.196C8.9793 19.788 10.1313 18.692 10.7313 17.908C11.3393 17.116 11.6433 16.372 11.6433 15.676C11.6433 15.108 11.4873 14.676 11.1753 14.38C10.8713 14.084 10.4193 13.936 9.8193 13.936Z"
+            fill="#735745" />
+        </svg>
+      </div>
+      
+      <div class="col-12 col-md-9 header__menu js-mobile-menu">
+        <nav class="top-menu">
+  <a href="/" class="top-menu__item">Главная</a>
+  <a href="/store.html" class="top-menu__item">Магазин</a>
+  <a href="" class="top-menu__item d-none d-md-block">
+    <svg width="30" height="41" viewBox="0 0 30 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.75" y="13.75" width="28.5" height="26.5" rx="1.25" stroke="white" stroke-width="1.5" />
+      <path
+        d="M23 9C23 6.87827 22.1571 4.84344 20.6569 3.34315C19.1566 1.84285 17.1217 1 15 1C12.8783 1 10.8434 1.84285 9.34315 3.34315C7.84286 4.84344 7 6.87827 7 9"
+        stroke="white" stroke-width="1.5" stroke-linecap="round" />
+      <path
+        d="M14.7289 20.904C13.5409 20.904 12.3529 21.318 11.1649 22.146L10.7329 20.994C11.9569 20.118 13.3489 19.68 14.9089 19.68C16.1929 19.68 17.1889 20.01 17.8969 20.67C18.6049 21.318 18.9589 22.23 18.9589 23.406C18.9589 24.582 18.5329 25.77 17.6809 26.97C16.8289 28.17 15.2329 29.766 12.8929 31.758V31.794H19.0129V33H10.9129V31.794C13.4689 29.682 15.1969 28.038 16.0969 26.862C17.0089 25.674 17.4649 24.558 17.4649 23.514C17.4649 22.662 17.2309 22.014 16.7629 21.57C16.3069 21.126 15.6289 20.904 14.7289 20.904Z"
+        fill="white" />
+    </svg>
+  </a>
+</nav>
+
+        <div class="header__socials">
+          <p>Мы в социальных сетях</p>
+
+          <ul class="socials header__socials-list">
+            <li class="socials__item">
+              <a href="">
+                <img src="./img/svg/inst-dark.svg" alt="">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="">
+                <img src="./img/svg/youtube-dark.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="hero hero--second"> 
+      <div class="slider-main js-slider-main">
+        <div class="slider-main__item">
+          <div class="slider-main__img" style="background-image: url('./img/slider-main2.png');"></div>
+          <div class="slider-main__text">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <h1>Макияж</h1>
+                  <div class="slider-main__line"></div>
+                  <p>
+                    Мы, девушки, выбираем вечерний макияж по разным причинам: покрасоваться и полюбоваться собой у зеркала, попробовать
+                    новинки индустрии косметической промышленности, показать свою уникальность и подчеркнуть экстравагантность, а самое
+                    главное – изумить, покорить и завоевать внимание окружающих не важно где, в ресторне, кино, на пышном мероприятии или
+                    уютном романтическом ужине.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slider-main__item">
+          <div class="slider-main__img" style="background-image: url('./img/slider-main2.png');"></div>
+          <div class="slider-main__text">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <h1>Макияж</h1>
+                  <div class="slider-main__line"></div>
+                  <p>
+                    Мы, девушки, выбираем вечерний макияж по разным причинам: покрасоваться и полюбоваться собой у зеркала, попробовать
+                    новинки индустрии косметической промышленности, показать свою уникальность и подчеркнуть экстравагантность, а самое
+                    главное – изумить, покорить и завоевать внимание окружающих не важно где, в ресторне, кино, на пышном мероприятии
+                    или
+                    уютном романтическом ужине.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+
+    <section class="price">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h2>Прайс лист</h2>
+          </div>
+          <div class="col-12 col-md-8 col-lg-10">
+     
+            <div class="price__item">
+              <div class="container">
+                <div class="row price__element price__element--border-top">
+                  <div class="col-12 col-md-5 p-0">
+                    <div class="price__item-subtitle">
+                      Вечерний макияж
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 offset-md-1 price__item-price">
+                    3 700 Р
+                  </div>
+                </div>
+
+                <div class="row price__element price__element--border-top">
+                  <div class="col-12 col-md-5 p-0">
+                    <div class="price__item-subtitle">
+                      Экспресс-Макияж
+                    </div>
+                    <span class="price__item-small">
+                      (тон, брови, легкая коррекция, губы)
+                    </span>
+                  </div>
+                  <div class="col-12 col-md-6 offset-md-1 price__item-price">
+                    2 200 Р
+                  </div>
+                </div>
+
+                <div class="row price__element price__element--border-top">
+                  <div class="col-12 col-md-5 p-0">
+                    <div class="price__item-subtitle">
+                      Сет «Вечерний макияж + укладка на стайлеры»
+                    </div>
+                    <span class="price__item-small">
+                      (объемные локоны, голливудская волна, афро-кудри)
+                    </span>
+                  </div>
+                  <div class="col-12 col-md-6 offset-md-1 price__item-price">
+                    6 000 Р
+                  </div>
+                </div>
+
+                <div class="row price__element price__element--border-top">
+                  <div class="col-12 col-md-5 p-0">
+                    <div class="price__item-subtitle">
+                      Сет «Вечерний макияж + вечерняя прическа»
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 offset-md-1 price__item-price">
+                    6 500 Р *
+                  </div>
+                </div>
+
+                <div class="row price__element price__element--border-top">
+                  <div class="col-12 p-0">
+                    <p>* Цены указаны на укладки на сухие и чистые волосы, также возможна небольшая наценка за длинные и очень длинные волосы</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="service-price">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 col-md-2 pl-2 pr-1 pr-md-2">
+        <div class="service-price__img" style="background-image: url('./img/service-price1.png');"></div>
+      </div>
+      <div class="col-6 col-md-2 pl-1 pl-md-2 pr-2 d-flex align-items-end">
+        <div class="service-price__img" style="background-image: url('./img/service-price1.png');"></div>
+      </div>
+
+      <div class="col-md-5 offset-md-1">
+        <h2>BRIDAL SETS <br/> by Fashion Champagne</h2>
+        <div class="service-price__line"></div>
+        <div class="service-price__item">
+          <h3>Свадебный макияж + укладка на стайлеры</h3>
+          <div class="service-price__item-price">12 000 ₽</div>
+        </div>
+        <div class="service-price__item">
+          <h3>Свадебный макияж + укладка на стайлеры с элементами прически</h3>
+          <div class="service-price__item-price">13 000 ₽</div>
+        </div>
+        <div class="service-price__item">
+          <h3>Свадебный макияж + вечерняя причёска</h3>
+          <div class="service-price__item-price">14 000 ₽</div>
+        </div>
+
+        <div class="service-price__list">
+          <h4>Условия сотрудничества:</h4>
+          <ul class="">
+            <li>В сумму свадебного сета входит выезд двоих мастеров с полным набором необходимой косметики и инструментов</li>
+            <li>При выезде в нестандартное время стоимость услуг увеличивается (с 4 до 6 утра +15%, с 6 до 8 утра +10%)</li>
+            <li>Дополнительные услуги для мам, сестёр и подруг оплачиваются по стандартному прайсу салона и запись также ведётся заранее</li>
+            <li>При бронировании даты, мы заключаем договор с предоплатой в 10% и вы также получаете скидку в 10% от стоимости вечернего
+            сета на пробный образ</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="appointment">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="appointment__content">
+          <img src="./img/svg/logo.svg" alt="" class="appointment__img">
+          <div class="btn btn--block btn--white">Записаться</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="services">
+  <h2>Другие услуги</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <a href="" class="services__item" style="background-image: url(./img/service-nails.png);">
+          <div class="services__item-content">
+            NAILS
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="" class="services__item" style="background-image: url(./img/service-brows.png);">
+          <div class="services__item-content d-flex d-md-none">
+            <span>
+              BROWS<br />&LASHES
+            </span>
+          </div>
+          <div class="services__item-content d-none d-md-flex">
+            BROWS&LASHES
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="" class="services__item" style="background-image: url(./img/service-make-up.png);">
+          <div class="services__item-content">
+            MAKE UP
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="instagramm">
+  <div class="container">
+    <h2>Мы в Instagram @fashionchampagne_</h2>
+    <ul class="instagramm__list">
+      <li class="instagramm__item" style="background-image: url('./img/inst1.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst2.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst3.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst4.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst5.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst6.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst7.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst8.png');"></li>
+      <li class="instagramm__item" style="background-image: url('./img/inst9.png');"></li>
+    </ul>
+  </div>
+</section>
+    <div class="online-record">
+  <div class="online-record__content">
+    Онлайн запись
+  </div>
+</div>
+  </div>
+
+  <div class="full-image js-full-image">
+    <div class="full-image__close js-full-image-close">
+      Закрыть
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./js/main.min.js"></script>
+
+</body>
+
+</html>
