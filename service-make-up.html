@@ -14,7 +14,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header js-header-animate">
   <div class="container">
     <div class="row">
       <div class="col-3 d-flex align-items-center">
@@ -242,13 +242,13 @@
     </div>
   </div>
 </section>
-    <section class="appointment">
+    <section class="appointment js-appointment-block-opacity js-appointment-block-scale">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="appointment__content">
-          <img src="./img/svg/logo.svg" alt="" class="appointment__img">
-          <div class="btn btn--block btn--white">Записаться</div>
+          <img src="./img/svg/logo.svg" alt="" class="appointment__img js-appointment-logo-opacity js-appointment-logo-move">
+          <a href="" class="btn btn--block btn--white js-appointment-btn-opacity js-appointment-btn-move">Записаться</a>
         </div>
       </div>
     </div>
@@ -289,8 +289,8 @@
 </section>
     <section class="instagramm">
   <div class="container">
-    <h2>Мы в Instagram @fashionchampagne_</h2>
-    <ul class="instagramm__list">
+    <h2 class="js-instagramm-title-opacity js-instagramm-title-move">Мы в Instagram @fashionchampagne_</h2>
+    <ul class="instagramm__list js-instagramm-blocks-opacity js-instagramm-blocks-move">
       <li class="instagramm__item" style="background-image: url('./img/inst1.png');"></li>
       <li class="instagramm__item" style="background-image: url('./img/inst2.png');"></li>
       <li class="instagramm__item" style="background-image: url('./img/inst3.png');"></li>
@@ -303,7 +303,7 @@
     </ul>
   </div>
 </section>
-    <div class="online-record">
+    <div class="online-record js-online-record-animate">
   <div class="online-record__content">
     Онлайн запись
   </div>
@@ -315,11 +315,12 @@
       Закрыть
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./js/main.min.js"></script>
 
 </body>

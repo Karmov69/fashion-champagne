@@ -14,7 +14,8 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    
+    <header class="header js-header-animate">
   <div class="container">
     <div class="row">
       <div class="col-3 d-flex align-items-center">
@@ -81,12 +82,12 @@
     </div>
   </div>
 </header>
-    <div class="hero hero--main">
+    <div class="hero hero--main js-hero-image-animate">
   <div class="hero__bottom ">
     <div class="container">
       <div class="row">
         <div class="col-6 d-none d-md-flex align-items-center">
-          <ul class="socials">
+          <ul class="socials js-socials-animate">
   <li class="socials__item">
     <a href="">
       <img src="./img/svg/inst.svg" alt="">
@@ -100,7 +101,7 @@
 </ul>
         </div>
         <div class="col-6 d-flex justify-content-end">
-          <div class="online-record">
+          <div class="online-record js-online-record-animate">
   <div class="online-record__content">
     Онлайн запись
   </div>
@@ -116,12 +117,12 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="about__title">
-          <h2>«Fashion Champagne» — салон красоты в самом сердце Петербурга.</h2>
+          <h2 class="js-about-title-opacity js-about-title-move">«Fashion Champagne» — салон красоты в самом сердце Петербурга.</h2>
           <div class="about__line d-md-none"></div>
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <div class="about__text">
+        <div class="about__text js-about-text-opacity js-about-text-move">
           <p>
             Мы создали это место с большой любовью и ответственностью. Основные принципы нашей работы — это неизменное качество
             услуг, их безопасность, комфорт и внимание к каждой нашей гостье. Мы тщательно отслеживаем тренды индустрии,
@@ -137,7 +138,7 @@
 
     <div class="row">
       <div class="col-12">
-        <div class="about__video">
+        <div class="about__video js-about-video-opacity js-about-video-move">
           <img src="./img/about_video.png" alt="">
         </div>
       </div>
@@ -150,9 +151,9 @@
     <div class="row justify-content-center procedures__descriptions">
       <div class="col-12 col-md-6">
         <div class="description">
-          <h2 class="description__title">В «Fashion Champagne» думают и заботятся о тебе</h2>
-          <div class="description__line"></div>
-          <p class="description__text">
+          <h2 class="description__title js-services-title-opacity js-services-title-move">В «Fashion Champagne» думают и заботятся о тебе</h2>
+          <div class="description__line js-line-animate-opacity js-line-animate-move"></div>
+          <p class="description__text js-services-text-opacity js-services-text-move">
             Процедуры красоты — это must do и рутина каждой современной девушки, которая следит за собой. Нашей же миссией
             является
             сделать эти часы заботы о себе максимально комфортными и беззаботными, чтобы расслабиться и отключить голову
@@ -163,7 +164,7 @@
       </div>
     </div>
   
-    <div class="row justify-content-center">
+    <div class="row justify-content-center js-services-blocks-opacity js-services-blocks-move">
       <div class="col-12 col-md-5 mb-3">
         <a href="" class="services__item" style="background-image: url(./img/service-nails.png);">
           <div class="services__item-content">
@@ -200,9 +201,9 @@
     <div class="row justify-content-center salon__description">
       <div class="col-12 col-md-6">
         <div class="description">
-          <h2 class="description__title">В «Fashion Champagne» думают и заботятся о тебе</h2>
-          <div class="description__line"></div>
-          <p class="description__text">
+          <h2 class="description__title js-services-title-opacity js-services-title-move">ВДОХНОВИТЕСЬ И ПОЛУЧИТЕ УДОВОЛЬСТВИЕ В НАШЕМ САЛОНЕ</h2>
+          <div class="description__line js-line-animate-opacity js-line-animate-move"></div>
+          <p class="description__text js-services-text-opacity js-services-text-move">
             Процедуры красоты — это must do и рутина каждой современной девушки, которая следит за собой. Нашей же миссией
             является сделать эти часы заботы о себе максимально комфортными и беззаботными, чтобы расслабиться и отключить голову хотя бы на время ухода за собой, потому что здесь думают за тебя и заботятся о тебе.
           </p>
@@ -210,7 +211,7 @@
       </div>
     </div>
   </div>
-  <div class="slider-center js-slider-center">
+  <div class="slider-center js-slider-center js-services-blocks-animate">
     <div class="slider-center__item">
       <div class="slider-center__zoom js-slider-center-zoom">
         <img src="./img/icons/plus.png" alt="">
@@ -264,34 +265,33 @@
 
 
 </section>
-    <section class="appointment">
+    <section class="appointment js-appointment-block-opacity js-appointment-block-scale">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="appointment__content">
-          <img src="./img/svg/logo.svg" alt="" class="appointment__img">
-          <div class="btn btn--block btn--white">Записаться</div>
+          <img src="./img/svg/logo.svg" alt="" class="appointment__img js-appointment-logo-opacity js-appointment-logo-move">
+          <a href="" class="btn btn--block btn--white js-appointment-btn-opacity js-appointment-btn-move">Записаться</a>
         </div>
       </div>
     </div>
   </div>
 </section>
     <section class="store-link">
-  
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6 col-md-2">
-        <div class="store-link__img" style="background-image: url('./img/store-link1.png');"></div>
+      <div class="col-6 col-md-2 pr-md-0">
+        <div class="store-link__img js-store-link-photo1-opacity js-store-link-photo1-move" style="background-image: url('./img/store-link1.png');"></div>
       </div>
-      <div class="col-6 col-md-2">
-        <div class="store-link__img" style="background-image: url('./img/store-link2.png');"></div>
+      <div class="col-6 col-md-2 pl-md-0">
+        <div class="store-link__img js-store-link-photo2-opacity js-store-link-photo2-move" style="background-image: url('./img/store-link2.png');"></div>
       </div>
       <div class="col-12 col-md-4 offset-md-1">
-        <h2>Уникальный Ассортимент в Магазине «Fashion Champagne»</h2>
-        <div class="store-link__line"></div>
+        <h2 class="js-store-link-title-opacity js-store-link-title-move">Уникальный Ассортимент в Магазине «Fashion Champagne»</h2>
+        <div class="store-link__line js-store-link-line-opacity js-store-link-line-move"></div>
         <p>В нашем магазине мы собрали только лучшие товары для ухода за собой. У нас вы найдёте широкий ассортимент
           профессиональной и салонной косметики на все случаи.</p>
-        <a href="" class="btn btn--transparent">Перейти в Магазин</a>
+        <a href="" class="btn btn--transparent js-store-link-text-opacity js-store-link-text-move">Перейти в Магазин</a>
       </div>
     </div>
   </div>
@@ -299,8 +299,8 @@
     <section class="team"></section>
     <section class="instagramm">
   <div class="container">
-    <h2>Мы в Instagram @fashionchampagne_</h2>
-    <ul class="instagramm__list">
+    <h2 class="js-instagramm-title-opacity js-instagramm-title-move">Мы в Instagram @fashionchampagne_</h2>
+    <ul class="instagramm__list js-instagramm-blocks-opacity js-instagramm-blocks-move">
       <li class="instagramm__item" style="background-image: url('./img/inst1.png');"></li>
       <li class="instagramm__item" style="background-image: url('./img/inst2.png');"></li>
       <li class="instagramm__item" style="background-image: url('./img/inst3.png');"></li>
@@ -324,11 +324,12 @@
       Закрыть
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./js/main.min.js"></script>
 
 </body>
