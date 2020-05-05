@@ -100,13 +100,6 @@
   </li>
 </ul>
         </div>
-        <div class="col-6 d-flex justify-content-end">
-          <div class="online-record js-online-record-animate">
-  <div class="online-record__content">
-    Онлайн запись
-  </div>
-</div>
-        </div>
       </div>
     </div>
   </div>
@@ -291,12 +284,23 @@
         <div class="store-link__line js-store-link-line-opacity js-store-link-line-move"></div>
         <p>В нашем магазине мы собрали только лучшие товары для ухода за собой. У нас вы найдёте широкий ассортимент
           профессиональной и салонной косметики на все случаи.</p>
-        <a href="" class="btn btn--transparent js-store-link-text-opacity js-store-link-text-move">Перейти в Магазин</a>
+        <a href="" class="btn btn--transparent js-store-link-text-opacity js-store-link-text-move">
+          <span>Перейти в Магазин</span>
+          <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M40.5303 6.53033C40.8232 6.23744 40.8232 5.76256 40.5303 5.46967L35.7574 0.696699C35.4645 0.403806 34.9896 0.403806 34.6967 0.696699C34.4038 0.989593 34.4038 1.46447 34.6967 1.75736L38.9393 6L34.6967 10.2426C34.4038 10.5355 34.4038 11.0104 34.6967 11.3033C34.9896 11.5962 35.4645 11.5962 35.7574 11.3033L40.5303 6.53033ZM0 6.75H40V5.25H0V6.75Z"
+              fill="#735745" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 </section>
-    <section class="team"></section>
+    <section class="team">
+  <video width="100%" height="100%" controls="controls" poster="./img/team.png">
+    <source src="./videos/team.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  </video>
+</section>
     <section class="instagramm">
   <div class="container">
     <h2 class="js-instagramm-title-opacity js-instagramm-title-move">Мы в Instagram @fashionchampagne_</h2>
@@ -357,6 +361,11 @@
   </div>
 </footer>
 
+    <div class="online-record js-online-record-animate">
+  <div class="online-record__content">
+    Онлайн запись
+  </div>
+</div>
   </div>
 
   <div class="full-image js-full-image">
@@ -372,7 +381,5 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 <script src="./js/main.min.js"></script>
-
 </body>
-
 </html>
